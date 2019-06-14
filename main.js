@@ -14,10 +14,10 @@ let profiles = [{
     "id": 2,
     "name": "operator"
 }]
-var salida = []
+var exit = []
 users.map(user=>{
     profiles.map(profile=>{
         profile.id == user.id_profile ? salida.push({"user":user.name, "profile":profile.name}) : 0
     })
 })
-console.log(salida);
+console.log(exit);
