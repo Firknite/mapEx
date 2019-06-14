@@ -17,7 +17,7 @@ let profiles = [{
 var exit = []
 users.map(user=>{
     profiles.map(profile=>{
-        profile.id == user.id_profile ? salida.push({"user":user.name, "profile":profile.name}) : 0
+        profile.id == user.id_profile ? exit.push({"user":user.name, "profile":profile.name}) : 0
     })
 })
 console.log(exit);
